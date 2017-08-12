@@ -1,0 +1,67 @@
+.form {
+    padding-top: $baseline;
+    padding-bottom: $baseline;
+    margin-bottom: $baseline * 3;
+
+    &__input {
+        margin-bottom: $baseline * 3;
+
+        label {
+            font-size: 21px;
+            display: block;
+            margin-bottom: $baseline;
+        }
+
+        input {
+            height: $baseline * 5;
+            display: block;
+            width: 100%;
+            font-size: $base-font-size;
+            padding-left: $gutter / 2;
+            padding-right: $gutter / 2;
+            border: 2px solid $dark;
+            
+            &:focus {
+                outline: 3px solid $focus;
+            }
+        }
+
+        &--error {
+            margin-left: $gutter * 1.5;
+            position: relative;
+        }
+        
+        &--error:before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 6px;
+            top: 2px;
+            background-color: $warning;
+            left: -($gutter * 1.5);
+
+        }
+    }
+
+    &__error {
+        display: block;
+        margin-top: $baseline * 2;
+        color: $warning;
+    }
+
+    &__button {
+        background-color: $primary;
+        border: 0;
+        font-size: $base-font-size;
+        color: $light;
+        padding: $baseline $gutter;
+
+        &:focus {
+            outline: 3px solid $focus
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

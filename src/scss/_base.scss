@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+body {
+    color: $dark;
+    padding-right: $gutter;
+    padding-left: $gutter;
+
+    @media (max-width: $small-screen) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ONS chart data to HTML table</title>
+    <link rel="stylesheet" href="/dist/main.css">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+</head>
+<body>
+    <h1>Convert ONS charts to HTML tables</h1>
+    <div class="grid">
+        <form class="form grid__col--3" aria-controls="table-container" id="chart-input-form">
+            <div class="form__input">
+                <label for="chart-url">Enter a chart's url</label>
+                <input type="text" name="chart-url" id="chart-url"/>
+            </div>
+            <button class="form__button" type="submit">Build table</button>
+        </form>
+    </div>
+    <div id="table-container" role="region" aria-live="polite"></div>
+    <script type="text/javascript" src="/dist/index.js"></script>
+</body>
+</html>

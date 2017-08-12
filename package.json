@@ -1,0 +1,21 @@
+{
+  "name": "ons-chart-to-table",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:Crispioso/ons-chart-to-table.git",
+  "author": "Crispioso <crispin.merriman@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "http-server": "^0.10.0",
+    "node-sass": "^4.5.3"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist --source-maps & node-sass --source-map true src/scss/* dist/main.css",
+    "watch": "babel src --watch --out-dir dist --source-maps & node-sass --source-map true --watch src/scss/main.scss dist/main.css",
+    "server": "http-server -p 9090"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}

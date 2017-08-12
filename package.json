@@ -15,7 +15,5 @@
     "watch": "babel src --watch --out-dir dist --source-maps & node-sass --source-map true --watch src/scss/main.scss dist/main.css",
     "server": "http-server -p 9090"
   },
-  "devDependencies": {
-    "jest": "^20.0.4"
-  }
+  "devDependencies": {}
 }

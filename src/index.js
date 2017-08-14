@@ -76,7 +76,6 @@ if (tableContainer) {
         static hide() {
             const loader = document.getElementById('loader');
             if (!loader) {
-                debugger;
                 console.warn("Attempt to remove loader when it's not being displayed yet");
                 return;
             }

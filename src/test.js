@@ -56,7 +56,6 @@ const test1 = {
     },
     description: "Returned HTML string matches stored snapshot",
     run: HTMLOutput => {
-        console.log(HTMLOutput);
         if (HTMLOutput.replace(/\s/g, "") === tableSnapshot.replace(/\s/g, "")) {
             return true;
         }

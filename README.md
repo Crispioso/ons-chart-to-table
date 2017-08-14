@@ -34,6 +34,6 @@ npm run watch
 
 ## To do
 
-1. Test coverage
+1. ~~Test coverage~~
 2. Server-side implementation
 3. 'Copy to clipboard' code snippet

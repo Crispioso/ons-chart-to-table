@@ -11,7 +11,7 @@
     "node-sass": "^4.5.3"
   },
   "scripts": {
-    "build": "babel src --out-dir dist --source-maps & node-sass --source-map true src/scss/* dist/main.css",
+    "build": "babel src --out-dir dist --source-maps & node-sass --source-map true src/scss/main.scss dist/main.css",
     "watch": "babel src --watch --out-dir dist --source-maps & node-sass --source-map true --watch src/scss/main.scss dist/main.css",
     "server": "http-server -p 9090"
   },
